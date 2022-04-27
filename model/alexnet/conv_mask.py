@@ -171,8 +171,8 @@ class conv_mask_F(Function):
 
         for lab in range(len(Div_list)):
             if (labelNum == 1):
-                w_pos = 0.5/36 * max(-1, 1-(4/13))
-                w_neg = -0.5/36
+                w_pos = 0.5/169 * max(-1, 1-(4/13))
+                w_neg = -0.5/169
             else:
                 if (labelNum > 10):
                     w_pos = 0.5 / (1 / labelNum)

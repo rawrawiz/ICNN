@@ -150,7 +150,7 @@ class conv_mask_F(Function):
                     Div_list[lab].posList = (label[:, lab, :, :] == 1).nonzero()[:, 0].reshape(-1, 1)
 
         imgNum = label.size()[0]
-        alpha = 1/338
+        alpha = 169/170
         x_grad = x_grad.mul(torch.max(mask, torch.zeros(mask.size()).cuda()))
 
         if ((torch.sum(parameter_filter == 1)) > 0):
